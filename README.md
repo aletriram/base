@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.1] - 2018-02-15
+### Added
+- Configuración webpack para minificar el bundle CSS  @juanmiguelguerrero
+- Configuración webpack para activar la opción de LiveReload @juanmiguelguerrero
+
 ## [0.0.1] - 2018-02-01
 ### Added
 - README.md incluyendo Changelog del proyecto @juanmiguelguerrero
