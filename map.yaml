@@ -1,149 +1,149 @@
 languages:
-    -   path: es
-        text: Español
-        active: true
+  - path: es
+    text: Español
+    active: true
 
-    -   path: en
-        text: English
-        active: true
+  - path: en
+    text: English
+    active: true
 
 content:
-    -   content: Inicio
-        id: 1
-        languages:
-            es:
-                url: /
-            en:
-                url: /
-        router:
-            route: /template
-            view: home
+  - content: Inicio
+    id: 1
+    languages:
+      es:
+        url: /
+      en:
+        url: /
+    router:
+      route: /template
+      view: home
 
-    -   content: Sobre nosotros
-        id: 2
-        languages:
-            es:
-                description: Sobre nosotros
-                url: /sobre-nosotros
-                metatags:
-                    title: Sobre nosotros
-                    keywords: palabraclave1 palabraclave2 
-            en:
-                description: About us
-                url: /about-us
-                metatags:
-                    title: About us
-                    keywords: keyword1 keyword2
-        router:
-            route: /editor
-            view: editor
+  - content: Sobre nosotros
+    id: 2
+    languages:
+      es:
+        description: Sobre nosotros
+        url: /sobre-nosotros
+        metatags:
+          title: Sobre nosotros
+          keywords: palabraclave1 palabraclave2 
+      en:
+        description: About us
+        url: /about-us
+        metatags:
+          title: About us
+          keywords: keyword1 keyword2
+    router:
+      route: /editor
+      view: editor
 
-    -   content: Servicios
-        id: 3
-        languages:
-            es:
-                description: Servicios
-                url: /servicios
-                metatags:
-                    title: Servicios
-                    keywords: palabraclave1 palabraclave2 
-            en:
-                description: Services
-                url: /services
-                metatags:
-                    title: Services
-                    keywords: keyword1 keyword2
-        router:
-            route: /editor
-            view: editor
+  - content: Servicios
+    id: 3
+    languages:
+      es:
+        description: Servicios
+        url: /servicios
+        metatags:
+          title: Servicios
+          keywords: palabraclave1 palabraclave2 
+      en:
+        description: Services
+        url: /services
+        metatags:
+          title: Services
+          keywords: keyword1 keyword2
+    router:
+      route: /editor
+      view: editor
 
-    -   content: Noticias
-        id: 5
-        languages:
-            es:
-                exp: /noticias(/\.*)?
-                metatags:
-                    title: Noticias
-                    keywords: noticiasclave1 noticiasclave2 
-            en:
-                exp: /news(/\.*)?
-                metatags:
-                    title: New
-                    keywords: newslist1 
-        router:
-            route: /noticias
-            view: noticias
+  - content: Noticias
+    id: 5
+    languages:
+      es:
+        exp: /noticias(/\.*)?
+        metatags:
+          title: Noticias
+          keywords: noticiasclave1 noticiasclave2 
+      en:
+        exp: /news(/\.*)?
+        metatags:
+          title: New
+          keywords: newslist1 
+    router:
+      route: /noticias
+      view: noticias
 
-    -   content: Noticias
-        id: 6
-        languages:
-            es:
-                url: /noticiaslista
-                metatags:
-                    title: Noticias lista
-                    keywords: noticiasclave1 noticiasclave2 
-            en:
-                url: /newslist
-                metatags:
-                    title: New list
-                    keywords: newslist1 
-        router:
-            route: /noticias-lista
-            view: noticias
+  - content: Noticias
+    id: 6
+    languages:
+      es:
+        url: /noticiaslista
+        metatags:
+          title: Noticias lista
+          keywords: noticiasclave1 noticiasclave2 
+      en:
+        url: /newslist
+        metatags:
+          title: New list
+          keywords: newslist1 
+    router:
+      route: /noticias-lista
+      view: noticias
 
-    -   content: Noticias detalle
-        id: 7
-        languages:
-            es:
-                exp: /noticiaslista/(\d+)
-            en:
-                exp: /newslist/(\d+)
-        router:
-            route: /noticias-detalle
-            view: noticias-detalle
+  - content: Noticias detalle
+    id: 7
+    languages:
+      es:
+        exp: /noticiaslista/(\d+)
+      en:
+        exp: /newslist/(\d+)
+    router:
+      route: /noticias-detalle
+      view: noticias-detalle
 
-    -   content: Proyectos
-        id: 8
-        languages:
-            es:
-                url: /proyectos
-                metatags:
-                    title: Proyectos
-                    keywords: proyectosclave1 
-            en:
-                url: /projects
-                metatags:
-                    title: Projects
-                    keywords: projectskeyword1 
-        router:
-            route: /proyectos
-            view: proyectos
+  - content: Proyectos
+    id: 8
+    languages:
+      es:
+        url: /proyectos
+        metatags:
+          title: Proyectos
+          keywords: proyectosclave1 
+      en:
+        url: /projects
+        metatags:
+          title: Projects
+          keywords: projectskeyword1 
+    router:
+      route: /proyectos
+      view: proyectos
 
-    -   content: Contacto
-        id: 9
-        languages:
-            es:
-                url: /contacto
-                metatags:
-                    title: Contacto
-                    keywords: contactoclave1 
-            en:
-                url: /contact-us
-                metatags:
-                    title: Contact us
-                    keywords: contactkeyword1 
-        router:
-            route: /template
-            view: contacto
-    
-    -   content: Enlace
-        id: 10
-        languages:
-            es:
-                url: /enlace
-                redirect: https://www.google.es
-            en:
-                url: /link
-                redirect: https://www.google.com
+  - content: Contacto
+    id: 9
+    languages:
+      es:
+        url: /contacto
+        metatags:
+          title: Contacto
+          keywords: contactoclave1 
+      en:
+        url: /contact-us
+        metatags:
+          title: Contact us
+          keywords: contactkeyword1 
+    router:
+      route: /template
+      view: contacto
+  
+  - content: Enlace
+    id: 10
+    languages:
+      es:
+        url: /enlace
+        redirect: https://www.google.es
+      en:
+        url: /link
+        redirect: https://www.google.com
 
-    
+  

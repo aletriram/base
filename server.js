@@ -9,7 +9,7 @@ const commaargs = require ('command-line-args');
 const baseRouter = require ('@e-xisto/base-router');
 let args;
 
-const options = [ { name: 'map', alias: 'm', type: String, defaultValue: 'map.yaml'} ];
+const options = [ { name: 'map', alias: 'm', type: String, defaultValue: 'map.json'} ];
 
 try {
     args = new require ('command-line-args')(options);

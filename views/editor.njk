@@ -5,13 +5,9 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<h1>Vista 1</h1>
-			<h3>Información de la ruta</h3>
-			<h4>Ruta: {{__route.router.route}}</h4>
-			<h4>Vista: {{__route.router.view}}</h4>
-			<pre>
-				{{__route | dump | safe}}
-			</pre>
+			<div id="app">
+				Contenido editor
+			</div>
 		</div>
 	</div>
 </div>
@@ -21,4 +17,3 @@
 {% block scripts %}
 	{{ super() }}
 {% endblock %}
-
