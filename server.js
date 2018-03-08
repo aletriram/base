@@ -1,12 +1,25 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var morgan = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var nunjucks = require('nunjucks');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const morgan = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const nunjucks = require('nunjucks');
+const commaargs = require ('command-line-args');
+const baseRouter = require ('@e-xisto/base-router');
+let args;
 
-var app = express();
+const options = [ { name: 'map', alias: 'm', type: String, defaultValue: 'map.yaml'} ];
+
+try {
+    args = new require ('command-line-args')(options);
+} catch (e) {
+    console.log (e);
+    process.exit ();
+}
+
+
+const app = module.exports = express ();
 
 // view engine setup
 app.set('view engine', 'njk');
@@ -26,8 +39,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-app.use('/', require('./routes/index'));
+baseRouter.configure ({ path: __dirname, map: args.map });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -46,5 +58,3 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-module.exports = app;
