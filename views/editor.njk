@@ -3,10 +3,11 @@
 {% block content %}
 
 <div class="container">
+	<h1>{{item.description | safe}}</h1>
 	<div class="row">
 		<div class="col-md-12">
 			<div id="app">
-				Contenido editor
+				{{item.html | safe}}				
 			</div>
 		</div>
 	</div>

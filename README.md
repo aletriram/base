@@ -6,7 +6,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-### Add - 2018-03-08
+### Added 2018-03-08
+- Instalado axios @juanmiguelguerrero @aletriram @CesarEGarcia
+- Instalado json-server para dev @juanmiguelguerrero @aletriram @CesarEGarcia
+- Servicio modelo para api @juanmiguelguerrero @aletriram @CesarEGarcia
+- Api dummy para pruebas con noticias y proyectos @juanmiguelguerrero @aletriram @CesarEGarcia
+- Creados routers para editor, template y custom (noticias, proyectos) @juanmiguelguerrero @aletriram @CesarEGarcia
+- Configuración npm para arrancar la db dummy json-server para dev @juanmiguelguerrero @aletriram @CesarEGarcia
+
+### Changed 2018-03-08
+- Map.json estructura ejemplo @juanmiguelguerrero @aletriram @CesarEGarcia
+
+### Added - 2018-03-08
 - Se añade el componete base-router
 - Se puede parametrizar el servidor para que arranque con un mapa o con otro
 

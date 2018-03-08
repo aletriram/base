@@ -82,41 +82,17 @@
 		},
 		{
 			"content": "Noticias",
-			"id": 5,
-			"languages": {
-				"es": {
-					"exp": "/noticias(/\\.*)?",
-					"metatags": {
-						"title": "Noticias",
-						"keywords": "noticiasclave1 noticiasclave2"
-					}
-				},
-				"en": {
-					"exp": "/news(/\\.*)?",
-					"metatags": {
-						"title": "New",
-						"keywords": "newslist1"
-					}
-				}
-			},
-			"router": {
-				"route": "/noticias",
-				"view": "noticias"
-			}
-		},
-		{
-			"content": "Noticias",
 			"id": 6,
 			"languages": {
 				"es": {
-					"url": "/noticiaslista",
+					"url": "/noticias-lista",
 					"metatags": {
 						"title": "Noticias lista",
 						"keywords": "noticiasclave1 noticiasclave2"
 					}
 				},
 				"en": {
-					"url": "/newslist",
+					"url": "/news-list",
 					"metatags": {
 						"title": "New list",
 						"keywords": "newslist1"
@@ -133,10 +109,10 @@
 			"id": 7,
 			"languages": {
 				"es": {
-					"exp": "/noticiaslista/(\\d+)"
+					"url": "/noticias-lista/1"
 				},
 				"en": {
-					"exp": "/newslist/(\\d+)"
+					"url": "/newslist/1"
 				}
 			},
 			"router": {
@@ -204,6 +180,30 @@
 					"url": "/link",
 					"redirect": "https://www.google.com"
 				}
+			}
+		},
+		{
+			"content": "Noticias",
+			"id": 5,
+			"languages": {
+				"es": {
+					"exp": "/noticias(/\\.*)?",
+					"metatags": {
+						"title": "Noticias",
+						"keywords": "noticiasclave1 noticiasclave2"
+					}
+				},
+				"en": {
+					"exp": "/news(/\\.*)?",
+					"metatags": {
+						"title": "New",
+						"keywords": "newslist1"
+					}
+				}
+			},
+			"router": {
+				"route": "/noticias",
+				"view": "noticias"
 			}
 		}
 	]
