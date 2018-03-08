@@ -3,14 +3,17 @@
   "version": "0.0.2",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "npx npm-run-all --parallel watch:server watch:build",
+    "start": "clear; node ./bin/www",
+    "dev": "clear; npx npm-run-all --parallel watch:server watch:build",
+    "build": "clear; npx webpack",
     "watch:build": "npx webpack --watch",
     "watch:server": "npx nodemon \"./bin/www\""
   },
   "dependencies": {
+    "@e-xisto/base-router": "^1.0.2",
     "body-parser": "~1.18.2",
     "bootstrap": "^4.0.0",
+    "command-line-args": "^5.0.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
