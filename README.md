@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Add - 2018-03-08
+- Se añade el componete base-router
+- Se puede parametrizar el servidor para que arranque con un mapa o con otro
+
 ## [0.0.1] - 2018-02-01
 ### Added
 - README.md incluyendo Changelog del proyecto @juanmiguelguerrero

@@ -1,0 +1,52 @@
+languages:
+    -   path: es
+        text: Español
+        active: true
+
+    -   path: en
+        text: English
+        active: true
+
+content:
+    -   content: 'Contenido 1'
+        id: 1
+        languages:
+            es:
+                url: /contenido-1
+            en:
+                url: /content-1
+        router:
+            route: /ruta1
+            view: vista1
+
+    -   content: 'Contenido 2'
+        id: 2
+        languages:
+            es:
+                url: /contenido-2
+            en:
+                url: /content-2
+        router:
+            route: /ruta1
+            view: vista1
+
+    -   content: 'Contenido 3'
+        id: 3
+        languages:
+            es:
+                url: /contenido-3
+                redirect: /contenido-1
+            en:
+                url: /content-2
+                redirect: /content-1
+
+    -   content: Categorias
+        id: 5
+        languages:
+            es:
+                exp: '/categorias(/.*)?'
+            en:
+                url: /categorys
+        router:
+            route: /categorias
+            view: vista-categorias
