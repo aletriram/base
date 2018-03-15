@@ -1,0 +1,28 @@
+{% extends "layouts/layout.njk" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="app"></div>
+			<h1 class"mt-3 mb-4">Noticias</h1>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 mb-5">
+			<img src="{{ noticia.foto }}" alt="{{ noticia.titular }}" class="img-fluid">
+			<h2>{{ noticia.titular }}</h2>
+			<p>{{ noticia.entradilla }}</p>
+			<p>{{ noticia.cuerpo }}</p>
+			<a href="/noticias-lista" class="btn btn-outline-primary btn-block">Volver</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+	{{ super() }}
+{% endblock %}
