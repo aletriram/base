@@ -1,0 +1,103 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+{# TODO: Condicionar #}
+<title>{{ __route.meta.title }}</title>
+<meta name="description" content="{{ __route.meta.description }}">
+<meta name="keywords" content="{{ __route.meta.keywords }}">
+
+{% if (__route.noIndex) %}
+	<meta name="robots" content="noindex" />
+{% else %}
+	<meta name="robots" content="index,follow">
+{% endif %}
+
+<link rel="canonical" href="https://www.juvasa.com/es" /> 
+<link rel="alternate" href="https://www.juvasa.com/en/" hreflang="en" />
+<link rel="alternate" href="https://www.juvasa.com/es" hreflang="x-default" />
+
+<meta name="format-detection" content="telephone=no">
+
+{# Iconos #}
+<link rel="icon" sizes="192x192" href="images/icon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="mask-icon" href="images/icon.svg" color="blue">
+
+{#
+	Facebook Open Graph
+	Imagen mínima 200x200 / 1200x630
+#}
+
+{# TODO: Condicionar #}
+{% if (__route.og) %}
+{% if (__route.og) %}<meta property="fb:app_id" content="{{ __route.og.app_id }}">{% endif %}
+{% if (__route.og) %}<meta property="fb:admin" content="123456789">{% endif %}
+{% if (__route.og) %}<meta property="og:url" content="http://example.com/page.html">{% endif %}
+{% if (__route.og) %}<meta property="og:type" content="website">{% endif %}
+{% if (__route.og) %}<meta property="og:title" content="Content Title">{% endif %}
+{% if (__route.og) %}<meta property="og:image" content="http://example.com/image.jpg">{% endif %}
+{% if (__route.og) %}<meta property="og:description" content="Description Here">{% endif %}
+{% if (__route.og) %}<meta property="og:site_name" content="Site Name">{% endif %}
+{% if (__route.og) %}<meta property="og:locale" content="es_ES">{% endif %}
+{% if (__route.og) %}<meta property="article:author" content="">{% endif %}
+{% endif %}
+
+{#
+	Twitter Card
+	Imagen mínima 120x120 / 280x150
+	Más info: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
+#}
+{% if (__route.twitter) %}
+{% if (__route.twitter) %}<meta name="twitter:card" content="summary">{% endif %}
+{% if (__route.twitter) %}<meta name="twitter:site" content="@site_account">{% endif %}
+{% if (__route.twitter) %}<meta name="twitter:creator" content="@individual_account">{% endif %}
+{% if (__route.twitter) %}<meta name="twitter:url" content="http://example.com/page.html">{% endif %}
+{% if (__route.twitter) %}<meta name="twitter:title" content="Content Title">{% endif %}
+{% if (__route.twitter) %}<meta name="twitter:description" content="Content description less than 200 characters">{% endif %}
+{% if (__route.twitter) %}<meta name="twitter:image" content="http://example.com/image.jpg">{% endif %}
+{% endif %}
+
+{% for href in __route.dnsPrefetch %}
+<link rel="dns-prefetch" href="{{ href }}">
+{% endfor %}
+
+<link type="text/plain" rel="author" href="//dominio/humans.txt" />
+
+{% for key, value in __route.scripts %}
+{{ value }}
+{% endfor %}
+
+
+{#
+	Otras opciones no incluidas:
+
+	Para más información: https://github.com/joshbuchea/HEAD
+
+	<!-- Google no mostrará en su resultado el search box -->
+	<meta name="google" content="nositelinkssearchbox">
+
+	<!-- Google no recomendará una traducción de este sitio web -->	
+	<meta name="google" content="notranslate">
+
+	<!-- Incluir perfil Google+ -->	
+	<link rel="publisher"  href="https://plus.google.com/+nombreprefil"/>
+
+	<!-- Añadir al home screen como webapp para Apple -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<!-- Añadir al home screen como webapp para Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+
+	<!-- Launch Screen Image -->
+	<link rel="apple-touch-startup-image" href="/path/to/launch.png">
+	<!-- Launch Icon Title -->
+	<meta name="apple-mobile-web-app-title" content="App Title">	
+	
+	<!-- Enlazar con aplicaciones en stores -->
+	<meta name="google-play-app" content="app-id=es.existo.xxxxxxxxx">
+	<meta name="apple-itunes-app" content="app-id=xxxxxxx">
+#}

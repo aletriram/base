@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Plantilla de prueba</title>
-	<link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-	{% include "partials/top.njk" %}
+<html lang="{{__route.lng}}">
+	<head>
+		{% include "partials/head.njk" %}
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
 
-	{% block content %}
-	{% endblock %}
+	<body>
+		{{__route | dump}}
+		{% include "partials/top.njk" %}
 
-	{% include "partials/footer.njk" %}
+		{% block content %}
+		{% endblock %}
 
-	{% block scripts %}
-		<script src="/js/main.js" charset="utf-8"></script>
-	{% endblock %}
-</body>
+		{% include "partials/footer.njk" %}
+
+		{% block scripts %}
+			<script src="/js/main.js" charset="utf-8"></script>
+		{% endblock %}
+	</body>
 </html>
