@@ -3,6 +3,7 @@ const router = require ('express').Router ();
 router.get ('/', function (req, res, next) {
 
 	res.render (res.locals.__route.router.view);
+	return;
 });
 
 module.exports = router;

@@ -10,7 +10,7 @@
     "watch:server": "npx nodemon \"./bin/www\""
   },
   "dependencies": {
-    "@e-xisto/base-router": "^1.0.2",
+    "@e-xisto/base-router": "^1.1.0",
     "body-parser": "~1.18.2",
     "bootstrap": "^4.0.0",
     "command-line-args": "^5.0.2",

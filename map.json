@@ -3,12 +3,14 @@
 		{
 			"path": "es",
 			"text": "Español",
-			"active": true
+			"active": true,
+			"default": true
 		},
 		{
 			"path": "en",
 			"text": "English",
-			"active": true
+			"active": true,
+			"default": true
 		}
 	],
 	"content": [
@@ -85,14 +87,14 @@
 			"id": 5,
 			"languages": {
 				"es": {
-					"exp": "/noticias(/\\.*)?",
+					"url": "/noticias/:id(\\d+)?",
 					"metatags": {
 						"title": "Noticias",
 						"keywords": "noticiasclave1 noticiasclave2"
 					}
 				},
 				"en": {
-					"exp": "/news(/\\.*)?",
+					"url": "/news/:id(\\d+)?",
 					"metatags": {
 						"title": "New",
 						"keywords": "newslist1"
@@ -133,10 +135,10 @@
 			"id": 7,
 			"languages": {
 				"es": {
-					"exp": "/noticiaslista/(\\d+)"
+					"url": "/noticiaslista/(\\d+)"
 				},
 				"en": {
-					"exp": "/newslist/(\\d+)"
+					"url": "/newslist/(\\d+)"
 				}
 			},
 			"router": {

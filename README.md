@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Add - 2018-03-15
+- Enrutado dinamico con parametros @cesaregarcia
+- Opción de idioma por defecto en el mapa @cesaregarcia
+
 ### Add - 2018-03-08
 - Se añade el componete base-router
 - Se puede parametrizar el servidor para que arranque con un mapa o con otro
