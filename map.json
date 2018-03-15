@@ -88,7 +88,9 @@
 					"url": "/sobre-nosotros",
 					"metatags": {
 						"title": "Sobre nosotros",
-						"keywords": "palabraclave1 palabraclave2"
+						"description": "",
+						"keywords": "palabraclave1 palabraclave2",
+						"canonical": ""
 					}
 				},
 				"en": {
@@ -96,7 +98,9 @@
 					"url": "/about-us",
 					"metatags": {
 						"title": "About us",
-						"keywords": "keyword1 keyword2"
+						"description": "",
+						"keywords": "keyword1 keyword2",
+						"canonical": ""
 					}
 				}
 			},
@@ -241,7 +245,7 @@
 			},
 			"router": {
 				"route": "/template",
-				"view": "contacto"
+				"view": "contacto",
 			}
 		},
 		{
@@ -250,11 +254,12 @@
 			"languages": {
 				"es": {
 					"url": "/enlace",
-					"redirect": "https://www.google.es"
+					"redirect": "/sobre-nosotros"
 				},
 				"en": {
 					"url": "/link",
-					"redirect": "https://www.google.com"
+					"redirect": "https://www.google.com",
+					"code": 410
 				}
 			}
 		}
