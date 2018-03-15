@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
-{# TODO: Es necesario cambiar el idioma del documento y elegir uno por default #}
-<html lang="{{__route.idioma}}">
+<html lang="{{__route.lng}}">
 	<head>
 		{% include "partials/head.njk" %}
 		<link rel="stylesheet" href="/css/main.css">
 	</head>
 
 	<body>
+		{{__route | dump}}
 		{% include "partials/top.njk" %}
 
 		{% block content %}

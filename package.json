@@ -22,8 +22,7 @@
     "jquery": "^3.3.1",
     "morgan": "~1.9.0",
     "nunjucks": "^3.0.1",
-    "popper.js": "^1.12.9",
-    "serve-favicon": "~2.4.5"
+    "popper.js": "^1.12.9"
   },
   "devDependencies": {
     "@types/bootstrap": "^3.3.37",

@@ -4,19 +4,68 @@
 			"path": "es",
 			"text": "Español",
 			"active": true,
-			"default": true
+			"default": true,
+			"meta": {
+				"title": "",
+				"description": "",
+				"keywords": ""
+			},
+			"og": {
+				"app_id": "",
+				"admin": "",
+				"url": "",
+				"type": "",
+				"title": "",
+				"image": "",
+				"description": "",
+				"site_name": "",
+				"locale": "",
+				"author": ""
+			},
+			"twitter": {
+				"card": "",
+				"site": "",
+				"creator": "",
+				"url": "",
+				"title": "",
+				"description": "",
+				"image": ""
+			}
 		},
 		{
 			"path": "en",
 			"text": "English",
-			"active": true,
-			"default": true
+			"active": true
 		}
 	],
+	"dnsPrefetch": [
+		"//www.youtube.com",
+		"//www.twitter.com"
+	],
+	"scripts": {
+		"googleAnalytics": "",
+		"googleTagManager": "",
+		"googleSiteVerification": ""
+	},
 	"content": [
+			{
+			"content": "Sitemap",
+			"id": 1,
+			"languages": {
+				"es": {
+					"url": "/sitemap.xml"
+				},
+				"en": {
+					"url": "/sitemap.xml"				
+				}
+			},
+			"router": {
+				"route": "/sitemap"
+			}
+		},	
 		{
 			"content": "Inicio",
-			"id": 1,
+			"id": 10,
 			"languages": {
 				"es": {
 					"url": "/"
@@ -54,7 +103,8 @@
 			"router": {
 				"route": "/editor",
 				"view": "editor"
-			}
+			},
+			"noIndex": true
 		},
 		{
 			"content": "Servicios",
