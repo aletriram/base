@@ -3,62 +3,210 @@
 		{
 			"path": "es",
 			"text": "Español",
-			"active": true
+			"active": true,
+			"default": true
 		},
 		{
 			"path": "en",
 			"text": "English",
-			"active": true
+			"active": true,
+			"default": true
 		}
-    ],
+	],
 	"content": [
 		{
-			"content": "Contenido 1",
+			"content": "Inicio",
 			"id": 1,
 			"languages": {
-					"es": {
-							"url": "/contenido-1"
-						},
-					"en": {
-							"url": "/content-1"
-						}
+				"es": {
+					"url": "/"
 				},
-			"router": {
-					"route": "/ruta1",
-					"view": "vista1"
+				"en": {
+					"url": "/"
 				}
+			},
+			"router": {
+				"route": "/template",
+				"view": "home"
+			}
 		},
 		{
-			"content": "Contenido 2",
+			"content": "Sobre nosotros",
 			"id": 2,
 			"languages": {
-					"es": {
-							"url": "/contenido-2"
-						},
-					"en": {
-							"url": "/content-2"
-						}
+				"es": {
+					"description": "Sobre nosotros",
+					"url": "/sobre-nosotros",
+					"metatags": {
+						"title": "Sobre nosotros",
+						"keywords": "palabraclave1 palabraclave2"
+					}
 				},
-			"router": {
-					"route": "/ruta1",
-					"view": "vista1"
+				"en": {
+					"description": "About us",
+					"url": "/about-us",
+					"metatags": {
+						"title": "About us",
+						"keywords": "keyword1 keyword2"
+					}
 				}
+			},
+			"router": {
+				"route": "/editor",
+				"view": "editor"
+			}
 		},
 		{
-			"content": "Categorias",
+			"content": "Servicios",
+			"id": 3,
+			"languages": {
+				"es": {
+					"description": "Servicios",
+					"url": "/servicios",
+					"metatags": {
+						"title": "Servicios",
+						"keywords": "palabraclave1 palabraclave2"
+					}
+				},
+				"en": {
+					"description": "Services",
+					"url": "/services",
+					"metatags": {
+						"title": "Services",
+						"keywords": "keyword1 keyword2"
+					}
+				}
+			},
+			"router": {
+				"route": "/editor",
+				"view": "editor"
+			}
+		},
+		{
+			"content": "Noticias",
 			"id": 5,
 			"languages": {
-								"es": {
-									"exp": "/categorias(/.*)?"
-								},
-								"en": {
-									"url": "/categorys"
-								}
+				"es": {
+					"url": "/noticias/:id(\\d+)?",
+					"metatags": {
+						"title": "Noticias",
+						"keywords": "noticiasclave1 noticiasclave2"
+					}
 				},
-			"router": {
-							"route": "/categorias",
-							"view":  "vista-categorias"
+				"en": {
+					"url": "/news/:id(\\d+)?",
+					"metatags": {
+						"title": "New",
+						"keywords": "newslist1"
+					}
 				}
+			},
+			"router": {
+				"route": "/noticias",
+				"view": "noticias"
+			}
+		},
+		{
+			"content": "Noticias",
+			"id": 6,
+			"languages": {
+				"es": {
+					"url": "/noticias-lista",
+					"metatags": {
+						"title": "Noticias lista",
+						"keywords": "noticiasclave1 noticiasclave2"
+					}
+				},
+				"en": {
+					"url": "/news-list",
+					"metatags": {
+						"title": "New list",
+						"keywords": "newslist1"
+					}
+				}
+			},
+			"router": {
+				"route": "/noticias-lista",
+				"view": "noticias"
+			}
+		},
+		{
+			"content": "Noticias detalle",
+			"id": 7,
+			"languages": {
+				"es": {
+					"url": "/noticiaslista/(\\d+)"
+				},
+				"en": {
+					"url": "/newslist/(\\d+)"
+				}
+			},
+			"router": {
+				"route": "/noticias-detalle",
+				"view": "noticias-detalle"
+			}
+		},
+		{
+			"content": "Proyectos",
+			"id": 8,
+			"languages": {
+				"es": {
+					"url": "/proyectos",
+					"metatags": {
+						"title": "Proyectos",
+						"keywords": "proyectosclave1"
+					}
+				},
+				"en": {
+					"url": "/projects",
+					"metatags": {
+						"title": "Projects",
+						"keywords": "projectskeyword1"
+					}
+				}
+			},
+			"router": {
+				"route": "/proyectos",
+				"view": "proyectos"
+			}
+		},
+		{
+			"content": "Contacto",
+			"id": 9,
+			"languages": {
+				"es": {
+					"url": "/contacto",
+					"metatags": {
+						"title": "Contacto",
+						"keywords": "contactoclave1"
+					}
+				},
+				"en": {
+					"url": "/contact-us",
+					"metatags": {
+						"title": "Contact us",
+						"keywords": "contactkeyword1"
+					}
+				}
+			},
+			"router": {
+				"route": "/template",
+				"view": "contacto"
+			}
+		},
+		{
+			"content": "Enlace",
+			"id": 10,
+			"languages": {
+				"es": {
+					"url": "/enlace",
+					"redirect": "https://www.google.es"
+				},
+				"en": {
+					"url": "/link",
+					"redirect": "https://www.google.com"
+				}
+			}
 		}
 	]
 }
