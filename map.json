@@ -111,14 +111,14 @@
 			"id": 6,
 			"languages": {
 				"es": {
-					"url": "/noticiaslista",
+					"url": "/noticias-lista",
 					"metatags": {
 						"title": "Noticias lista",
 						"keywords": "noticiasclave1 noticiasclave2"
 					}
 				},
 				"en": {
-					"url": "/newslist",
+					"url": "/news-list",
 					"metatags": {
 						"title": "New list",
 						"keywords": "newslist1"

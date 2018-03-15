@@ -1,9 +1,11 @@
 const router = require ('express').Router ();
 
+
 router.get ('/', function (req, res, next) {
 
-	res.render (res.locals.__route.router.view);
-	return;
+	let contenidos = require('../src/services/contenidos');
+
+	res.render (res.locals.__route.router.view, { item: contenidos.get(res.locals.__route.id) });
 });
 
 module.exports = router;
