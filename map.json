@@ -161,46 +161,6 @@
 			}
 		},
 		{
-			"content": "Noticias",
-			"id": 6,
-			"languages": {
-				"es": {
-					"url": "/noticias-lista",
-					"metatags": {
-						"title": "Noticias lista",
-						"keywords": "noticiasclave1 noticiasclave2"
-					}
-				},
-				"en": {
-					"url": "/news-list",
-					"metatags": {
-						"title": "New list",
-						"keywords": "newslist1"
-					}
-				}
-			},
-			"router": {
-				"route": "/noticias-lista",
-				"view": "noticias"
-			}
-		},
-		{
-			"content": "Noticias detalle",
-			"id": 7,
-			"languages": {
-				"es": {
-					"url": "/noticiaslista/(\\d+)"
-				},
-				"en": {
-					"url": "/newslist/(\\d+)"
-				}
-			},
-			"router": {
-				"route": "/noticias-detalle",
-				"view": "noticias-detalle"
-			}
-		},
-		{
 			"content": "Proyectos",
 			"id": 8,
 			"languages": {
@@ -245,7 +205,7 @@
 			},
 			"router": {
 				"route": "/template",
-				"view": "contacto",
+				"view": "contacto"
 			}
 		},
 		{

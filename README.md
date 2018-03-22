@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- [2018-03-22] Maquetación de plantillas Demoweb (home, noticias, footer, top, cabecera) @juanmiguelguerrero
+- [2018-03-22] Organización de carpeta CSS para carga de theme aislando bootstrap @juanmiguelguerrero
+- [2018-03-22] Ajustes de layout principal y carga en consola de variable __route @juanmiguelguerrero
+- [2018-03-22] Maquetación de plantillas noticias y noticias-detalle @juanmiguelguerrero
 
 ### Add - 2018-03-15
 - Enrutado dinamico con parametros @cesaregarcia
