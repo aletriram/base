@@ -245,7 +245,7 @@
 			},
 			"router": {
 				"route": "/template",
-				"view": "contacto",
+				"view": "contacto"
 			}
 		},
 		{
