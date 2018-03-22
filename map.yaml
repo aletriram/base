@@ -6,6 +6,7 @@ languages:
   - path: en
     text: English
     active: true
+    default: true
 
 content:
   - content: Inicio
@@ -27,7 +28,7 @@ content:
         url: /sobre-nosotros
         metatags:
           title: Sobre nosotros
-          keywords: palabraclave1 palabraclave2 
+          keywords: palabraclave1 palabraclave2
       en:
         description: About us
         url: /about-us
@@ -46,7 +47,7 @@ content:
         url: /servicios
         metatags:
           title: Servicios
-          keywords: palabraclave1 palabraclave2 
+          keywords: palabraclave1 palabraclave2
       en:
         description: Services
         url: /services
@@ -61,15 +62,15 @@ content:
     id: 5
     languages:
       es:
-        exp: /noticias(/\.*)?
+        url: /noticias/:id(\\d+)?
         metatags:
           title: Noticias
-          keywords: noticiasclave1 noticiasclave2 
+          keywords: noticiasclave1 noticiasclave2
       en:
-        exp: /news(/\.*)?
+        url: /news/:id(\\d+)?
         metatags:
           title: New
-          keywords: newslist1 
+          keywords: newslist1
     router:
       route: /noticias
       view: noticias
@@ -81,12 +82,12 @@ content:
         url: /noticiaslista
         metatags:
           title: Noticias lista
-          keywords: noticiasclave1 noticiasclave2 
+          keywords: noticiasclave1 noticiasclave2
       en:
         url: /newslist
         metatags:
           title: New list
-          keywords: newslist1 
+          keywords: newslist1
     router:
       route: /noticias-lista
       view: noticias
@@ -95,9 +96,9 @@ content:
     id: 7
     languages:
       es:
-        exp: /noticiaslista/(\d+)
+        url: /noticiaslista/(\d+)
       en:
-        exp: /newslist/(\d+)
+        url: /newslist/(\d+)
     router:
       route: /noticias-detalle
       view: noticias-detalle
@@ -109,12 +110,12 @@ content:
         url: /proyectos
         metatags:
           title: Proyectos
-          keywords: proyectosclave1 
+          keywords: proyectosclave1
       en:
         url: /projects
         metatags:
           title: Projects
-          keywords: projectskeyword1 
+          keywords: projectskeyword1
     router:
       route: /proyectos
       view: proyectos
@@ -126,16 +127,16 @@ content:
         url: /contacto
         metatags:
           title: Contacto
-          keywords: contactoclave1 
+          keywords: contactoclave1
       en:
         url: /contact-us
         metatags:
           title: Contact us
-          keywords: contactkeyword1 
+          keywords: contactkeyword1
     router:
       route: /template
       view: contacto
-  
+
   - content: Enlace
     id: 10
     languages:
@@ -146,4 +147,3 @@ content:
         url: /link
         redirect: https://www.google.com
 
-  

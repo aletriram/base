@@ -3,7 +3,34 @@
 		{
 			"path": "es",
 			"text": "Español",
-			"active": true
+			"active": true,
+			"default": true,
+			"meta": {
+				"title": "",
+				"description": "",
+				"keywords": ""
+			},
+			"og": {
+				"app_id": "",
+				"admin": "",
+				"url": "",
+				"type": "",
+				"title": "",
+				"image": "",
+				"description": "",
+				"site_name": "",
+				"locale": "",
+				"author": ""
+			},
+			"twitter": {
+				"card": "",
+				"site": "",
+				"creator": "",
+				"url": "",
+				"title": "",
+				"description": "",
+				"image": ""
+			}
 		},
 		{
 			"path": "en",
@@ -11,10 +38,34 @@
 			"active": true
 		}
 	],
+	"dnsPrefetch": [
+		"//www.youtube.com",
+		"//www.twitter.com"
+	],
+	"scripts": {
+		"googleAnalytics": "",
+		"googleTagManager": "",
+		"googleSiteVerification": ""
+	},
 	"content": [
+			{
+			"content": "Sitemap",
+			"id": 1,
+			"languages": {
+				"es": {
+					"url": "/sitemap.xml"
+				},
+				"en": {
+					"url": "/sitemap.xml"				
+				}
+			},
+			"router": {
+				"route": "/sitemap"
+			}
+		},	
 		{
 			"content": "Inicio",
-			"id": 1,
+			"id": 10,
 			"languages": {
 				"es": {
 					"url": "/"
@@ -37,7 +88,9 @@
 					"url": "/sobre-nosotros",
 					"metatags": {
 						"title": "Sobre nosotros",
-						"keywords": "palabraclave1 palabraclave2"
+						"description": "",
+						"keywords": "palabraclave1 palabraclave2",
+						"canonical": ""
 					}
 				},
 				"en": {
@@ -45,14 +98,17 @@
 					"url": "/about-us",
 					"metatags": {
 						"title": "About us",
-						"keywords": "keyword1 keyword2"
+						"description": "",
+						"keywords": "keyword1 keyword2",
+						"canonical": ""
 					}
 				}
 			},
 			"router": {
 				"route": "/editor",
 				"view": "editor"
-			}
+			},
+			"noIndex": true
 		},
 		{
 			"content": "Servicios",
@@ -82,42 +138,26 @@
 		},
 		{
 			"content": "Noticias",
-			"id": 6,
+			"id": 5,
 			"languages": {
 				"es": {
-					"url": "/noticias-lista",
+					"url": "/noticias/:id(\\d+)?",
 					"metatags": {
-						"title": "Noticias lista",
+						"title": "Noticias",
 						"keywords": "noticiasclave1 noticiasclave2"
 					}
 				},
 				"en": {
-					"url": "/news-list",
+					"url": "/news/:id(\\d+)?",
 					"metatags": {
-						"title": "New list",
+						"title": "New",
 						"keywords": "newslist1"
 					}
 				}
 			},
 			"router": {
-				"route": "/noticias-lista",
+				"route": "/noticias",
 				"view": "noticias"
-			}
-		},
-		{
-			"content": "Noticias detalle",
-			"id": 7,
-			"languages": {
-				"es": {
-					"url": "/noticias-lista/1"
-				},
-				"en": {
-					"url": "/newslist/1"
-				}
-			},
-			"router": {
-				"route": "/noticias-detalle",
-				"view": "noticias-detalle"
 			}
 		},
 		{
@@ -174,36 +214,13 @@
 			"languages": {
 				"es": {
 					"url": "/enlace",
-					"redirect": "https://www.google.es"
+					"redirect": "/sobre-nosotros"
 				},
 				"en": {
 					"url": "/link",
-					"redirect": "https://www.google.com"
+					"redirect": "https://www.google.com",
+					"code": 410
 				}
-			}
-		},
-		{
-			"content": "Noticias",
-			"id": 5,
-			"languages": {
-				"es": {
-					"exp": "/noticias(/\\.*)?",
-					"metatags": {
-						"title": "Noticias",
-						"keywords": "noticiasclave1 noticiasclave2"
-					}
-				},
-				"en": {
-					"exp": "/news(/\\.*)?",
-					"metatags": {
-						"title": "New",
-						"keywords": "newslist1"
-					}
-				}
-			},
-			"router": {
-				"route": "/noticias",
-				"view": "noticias"
 			}
 		}
 	]

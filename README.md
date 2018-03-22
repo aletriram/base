@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- [2018-03-22] Maquetación de plantillas Demoweb (home, noticias, footer, top, cabecera) @juanmiguelguerrero
+- [2018-03-22] Organización de carpeta CSS para carga de theme aislando bootstrap @juanmiguelguerrero
+- [2018-03-22] Ajustes de layout principal y carga en consola de variable __route @juanmiguelguerrero
+- [2018-03-22] Maquetación de plantillas noticias y noticias-detalle @juanmiguelguerrero
+
+### Add - 2018-03-15
+- Enrutado dinamico con parametros @cesaregarcia
+- Opción de idioma por defecto en el mapa @cesaregarcia
 
 ### Added 2018-03-08
 - Instalado axios @juanmiguelguerrero @aletriram @CesarEGarcia
@@ -13,11 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Api dummy para pruebas con noticias y proyectos @juanmiguelguerrero @aletriram @CesarEGarcia
 - Creados routers para editor, template y custom (noticias, proyectos) @juanmiguelguerrero @aletriram @CesarEGarcia
 - Configuración npm para arrancar la db dummy json-server para dev @juanmiguelguerrero @aletriram @CesarEGarcia
-
-### Changed 2018-03-08
 - Map.json estructura ejemplo @juanmiguelguerrero @aletriram @CesarEGarcia
-
-### Added - 2018-03-08
 - Se añade el componete base-router
 - Se puede parametrizar el servidor para que arranque con un mapa o con otro
 
