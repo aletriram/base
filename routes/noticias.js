@@ -7,6 +7,7 @@ router.get ('/:id(\\d+)', function (req, res, next) {
 		res.render ('noticias-detalle', { noticia: response.data });
 	}).catch( (e) => {
 		console.log(e);
+		next();
 	});
 });
 
@@ -16,6 +17,7 @@ router.get ('/', function (req, res, next) {
 		res.render (res.locals.__route.router.view, { noticias: response.data });
 	}).catch( (e) => {
 		console.log(e);
+		next();
 	});
 });
 
