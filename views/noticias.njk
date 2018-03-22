@@ -8,17 +8,15 @@
 	<div class="row">
 		{% for noticia in noticias %}
 		<div class="col-md-4 mb-5">
-			<img src="{{ noticia.foto }}" alt="{{ noticia.titular }}" class="img-fluid">
-			<h2>{{ noticia.titular }}</h2>
-			<p>{{ noticia.entradilla }}</p>
-			<a href="/noticias-lista/{{ noticia.id }}" class="btn btn-outline-primary btn-block">Leer más</a>
+			<a href="/noticias/{{ noticia.id }}">
+				<img src="{{ noticia.foto }}" alt="{{ noticia.titular }}" class="img-fluid mb-2">
+			</a>
+			<a href="" class="h4">{{ noticia.titular }}</a>
+			<p class="mb-2">{{ noticia.entradilla }}</p>
+			<p class="mb-5"><a href="/noticias/{{ noticia.id }}" class="btn btn-sm btn-outline-secondary">Leer más</a></p>
 		</div>
 		{% endfor %}
 	</div>
 </div>
 
-{% endblock %}
-
-{% block scripts %}
-	{{ super() }}
 {% endblock %}
